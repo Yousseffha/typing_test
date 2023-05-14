@@ -1,0 +1,88 @@
+/*start variables*/
+:root {
+    --MainColor: #0088FF;
+}
+/*end variables*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid;
+    padding: 15px 25px;
+    position: relative;
+}
+.container input {
+    position: absolute;
+    top: -999;
+    opacity: 0;
+    z-index: -1;
+}
+.container p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    height: 211px;
+    overflow-y: hidden;
+}
+.container p span {
+    margin-right:  2px;
+    border-radius: 5px;
+}
+.container .info-container {
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+}
+.container .info-container span {
+    width: 80px;
+}
+.container .info-container::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 50px);
+    height: 1px;
+    top: -15px;
+    left: -25px;
+    background-color: #000;
+}
+.container .info-container button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--MainColor);
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.container .info-container button:hover {
+    background-color: #0088ffaa;
+}
+
+
+.green {
+    color: green !important;
+    background-color: rgba(0, 128, 0, 0.419) !important;
+}
+.red {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.262);
+}
+.blue {
+    color: #17a2b8;
+}
